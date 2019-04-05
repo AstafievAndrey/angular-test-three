@@ -23,6 +23,7 @@ export class SharedModule {
     return {
       ngModule: SharedModule,
       providers: [
+        LayoutService,
         {provide: Config, useValue: config }
       ]
     };
